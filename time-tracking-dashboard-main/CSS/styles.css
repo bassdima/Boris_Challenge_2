@@ -1,0 +1,272 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  margin: 81px auto;
+  width: 328px;
+  gap: 24px;
+}
+
+/* General-card__Section (main) */
+.general-card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+
+.general-card__title {
+  display: flex;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 32px 39px 26px 30px;
+}
+
+.avatar {
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 17px;
+}
+
+.title-text {
+  padding-top: 12px;
+  width: 100%;
+}
+
+.title-text__first-line {
+  color: hsl(236, 100%, 87%);
+  font-size: 12px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.title-text__second-line {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* General-card__Section (navbar) */
+.general-card__navbar {
+  padding: 25px 22px 24px 33px;
+  font-size: 18px;
+}
+
+.nabar-text {
+  color: hsl(236, 100%, 87%);
+  text-decoration: none;
+}
+
+.nabar-text__weekly {
+  color: #fff;
+  margin: 0 41px 0 56px;
+}
+
+/* TimeTracking-card__Section / work-section */
+.timeTracking-card {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("../images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right 8% bottom 115%;
+  border-radius: 15px;
+  padding-top: 37px;
+}
+
+.timeTracking-card__main-box {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+  padding: 29px 25px 29px 24px;
+}
+
+.main-box__firstline {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.main-box__title {
+  flex: 2;
+}
+
+.main-box__icon {
+  flex: 2;
+  text-align: end;
+}
+
+.main-box__secondline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+}
+
+.text-current {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.text-last {
+  text-align: end;
+  width: 100%;
+}
+
+/* Play-section */
+.play-section {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("../images/icon-play.svg");
+  background-position: right 9% bottom 105%;
+}
+
+/* Study-section */
+.study-section {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("../images/icon-study.svg");
+  background-position: right 8% bottom 108%;
+}
+
+/* Exercise-section */
+.exercise-section {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("../images/icon-exercise.svg");
+  background-position: right 7% bottom 100%;
+}
+
+/* Social-section */
+.social-section {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("../images/icon-social.svg");
+  background-position: right 6% bottom 125%;
+}
+
+/* Self-care-section */
+.self-care-section {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("../images/icon-self-care.svg");
+  background-position: right 6% bottom 108%;
+}
+
+/* Media-quary */
+@media (min-width: 1200px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 100px auto;
+    width: 1110px;
+    gap: 30px;
+  }
+
+  /* General-card section (@media)*/
+  .general-card {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 255px;
+  }
+
+  .avatar {
+    width: 87px;
+    margin-bottom: 36px;
+  }
+
+  .general-card__title {
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+  }
+
+  .title-text {
+    padding: 0 0 0 3px;
+  }
+
+  .title-text__first-line {
+    margin-bottom: 5px;
+  }
+
+  .title-text__second-line {
+    font-size: 40px;
+  }
+
+  .general-card__navbar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .nabar-text__weekly {
+    margin: 22px 0;
+  }
+
+  .nabar-text:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* timeTracking-section */
+  .timeTracking-card {
+    width: 255px;
+    padding-top: 45px;
+    background-position: right 9% bottom 106%;
+  }
+
+  .timeTracking-card__main-box {
+    padding: 29px 30px 31px 31px;
+  }
+
+  .timeTracking-card__main-box:hover {
+    background-color: #34397b;
+    cursor: pointer;
+  }
+
+  .main-box__firstline {
+    background-position: right bottom 50%;
+    margin-bottom: 25px;
+  }
+
+  .main-box__icon {
+    line-height: 15px;
+  }
+
+  .main-box__icon:hover {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(6%) saturate(848%) hue-rotate(249deg) brightness(120%) contrast(100%);
+    cursor: pointer;
+  }
+
+  .main-box__secondline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-current {
+    font-size: 54px;
+    padding-bottom: 10px;
+  }
+
+  .text-last {
+    text-align: start;
+  }
+
+  .play-section {
+    background-position: right 11% bottom 103%;
+  }
+
+  .exercise-section {
+    background-position: right 9% bottom 101%;
+  }
+
+  .social-section {
+    background-position: right 7% bottom 111%;
+  }
